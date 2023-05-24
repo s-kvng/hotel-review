@@ -1,12 +1,14 @@
 import { render, screen , fireEvent } from '@testing-library/react';
 import NavBar from './NavBar';
 
+
+
 test('The Navbar component should render', ()=>{
 
     const view = render(<NavBar />);
-    expect(view).toMatchSnapshot();
-    
+    expect(view).toMatchSnapshot();  
 })
+
 
 test('The Navbar component should render a title', ()=>{
 
