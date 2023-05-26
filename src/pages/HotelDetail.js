@@ -23,7 +23,7 @@ function HotelDetail() {
   const { reviews, fetchReviews } = useContext(ReviewsContext);
 
   useEffect(() => {
-    (hotelId || !hotel.id) && fetchHotel(hotelId);
+    (hotelId ||  !hotel.id) && fetchHotel(hotelId);
   }, [fetchHotel, hotel.id, hotelId]);
 
   useEffect(() => {
